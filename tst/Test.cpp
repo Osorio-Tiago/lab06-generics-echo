@@ -3,10 +3,4 @@
 //
 
 #include "gtest/gtest.h"
-#include "ListaGenerica.h"
-#include "Game.h"
 
-TEST(Test, ListaJuegosT)
-{
-
-}
