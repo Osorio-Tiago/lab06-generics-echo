@@ -5,6 +5,7 @@
 #include <fstream>
 #include "GameManager.h"
 
+
 void GameManager::save(ISaveGame *saveGame, const std::string &filename) {
     std::ofstream file (filename, std::ofstream::out);
 

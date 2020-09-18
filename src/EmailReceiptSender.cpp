@@ -4,6 +4,8 @@
 
 #include <string>
 #include "EmailReceiptSender.h"
+#include <iostream>
+using namespace std;
 
 std::string EmailReceiptSender::sendReceipt() {
     return "Send receipt by Email";
