@@ -21,7 +21,6 @@ public:
     T* retornaElemento(int);
     bool insertaObjeto(T*);
     string verLista();
-    void grabaLista(ofstream&);
-    Lista<T>* leeLista(ifstream&);
+
 };
 #endif //MY_PROJECT_NAME_LISTAGENERICA_H

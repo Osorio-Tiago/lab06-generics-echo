@@ -42,7 +42,7 @@ T* Lista<T>::retornaElemento(int posicion)
 
 }
 template<class T>
-nodo<T>* Lista<T>::getPrimero()
+Nodo<T>* Lista<T>::getPrimero()
 {
     return primero;
 }
@@ -51,8 +51,8 @@ nodo<T>* Lista<T>::getPrimero()
 template <class T>
 bool Lista<T>::insertaObjeto(T* objeto)
 {
-    nodo<T>* actual;
-    nodo<T>* nuevo = new Nodo<T>(objeto, NULL);
+    Nodo<T>* actual;
+    Nodo<T>* nuevo = new Nodo<T>(objeto, NULL);
     if (primero == NULL)
     {
         primero = nuevo;
@@ -73,7 +73,7 @@ bool Lista<T>::insertaObjeto(T* objeto)
 template <class T>
 string Lista<T>::verLista()
 {
-    nodo<T>* p = primero;
+    Nodo<T>* p = primero;
     int cont = 1;
     stringstream s;
 
@@ -90,13 +90,4 @@ string Lista<T>::verLista()
         }
     }
     return s.str();
-}
-template<class T>
-void Lista<T>::grabaLista(ofstream& sali) {
-
-}
-
-template<class T>
-Lista<T>* Lista<T>::leeLista(ifstream& ent){
-    return NULL;
 }
