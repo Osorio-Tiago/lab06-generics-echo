@@ -5,6 +5,8 @@
 #ifndef MY_PROJECT_NAME_IRECEIPTSENDER_H
 #define MY_PROJECT_NAME_IRECEIPTSENDER_H
 
+#include <string>
+
 class IReceiptSender {
 public:
     virtual ~IReceiptSender();

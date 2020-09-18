@@ -2,6 +2,7 @@
 // Created by Angelo on 17/9/2020.
 //
 
+#include <fstream>
 #include "GameManager.h"
 
 void GameManager::save(ISaveGame *saveGame, const std::string &filename) {
