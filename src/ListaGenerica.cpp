@@ -6,7 +6,7 @@
 
 template <class T>
 Lista<T>::Lista(){
-    primero = NULL;
+    primero = nullptr;
 }
 
 template <class T>
@@ -16,8 +16,8 @@ Lista<T>::~Lista(){
 
 template<class T>
 void Lista<T>::limpiaLista() {
-    Nodo<T>* actual = NULL;
-    while (primero != NULL)
+    Nodo<T>* actual = nullptr;
+    while (primero != nullptr)
     {
         actual = primero;
         primero = actual->getSiguiente();  // Había un error...
@@ -30,7 +30,7 @@ T* Lista<T>::retornaElemento(int posicion)
 {
     int contador = 1;
     Nodo<T>* p = primero;
-    while (p != NULL && contador < posicion)
+    while (p != nullptr && contador < posicion)
     {
         p = p->getSiguiente();
         contador++;
@@ -38,7 +38,7 @@ T* Lista<T>::retornaElemento(int posicion)
     if (contador == posicion) {
         return p->getObjetoPtr();
     }
-    return NULL;
+    return nullptr;
 
 }
 template<class T>
@@ -52,14 +52,14 @@ template <class T>
 bool Lista<T>::insertaObjeto(T* objeto)
 {
     Nodo<T>* actual;
-    Nodo<T>* nuevo = new Nodo<T>(objeto, NULL);
-    if (primero == NULL)
+    Nodo<T>* nuevo = new Nodo<T>(objeto, nullptr);
+    if (primero == nullptr)
     {
         primero = nuevo;
     }
     else {
         actual = primero;
-        while (actual->getSiguiente() != NULL)
+        while (actual->getSiguiente() != nullptr)
         {
             actual = actual->getSiguiente();
         }
@@ -77,12 +77,12 @@ string Lista<T>::verLista()
     int cont = 1;
     stringstream s;
 
-    if (p == NULL)
+    if (p == nullptr)
     {
         s << "No hay elementos en la lista..." << endl;
     }
     else {
-        while (p != NULL)
+        while (p != nullptr)
         {
             s <<"No."<<cont<<endl<< *(p->getObjetoPtr()) << endl;
             p = p->getSiguiente();
