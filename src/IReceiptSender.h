@@ -4,8 +4,7 @@
 
 #ifndef MY_PROJECT_NAME_IRECEIPTSENDER_H
 #define MY_PROJECT_NAME_IRECEIPTSENDER_H
-#include <iostream>
-using namespace std;
+
 #include <string>
 
 class IReceiptSender {

@@ -18,7 +18,6 @@ public:
     Nodo<T>* getPrimero();
     void limpiaLista();
 
-
     T* retornaElemento(int);
     bool insertaObjeto(T*);
     string verLista();

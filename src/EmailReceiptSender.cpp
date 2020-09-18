@@ -2,9 +2,10 @@
 // Created by Angelo on 17/9/2020.
 //
 
-#include <string>
+
 #include "EmailReceiptSender.h"
 #include <iostream>
+#include <string>
 using namespace std;
 
 std::string EmailReceiptSender::sendReceipt() {
